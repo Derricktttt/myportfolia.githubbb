@@ -1,0 +1,687 @@
+* {
+  font-family: "Nanum Myeongjo", serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.backg {
+  background-color: #c4fcef;
+}
+
+nav {
+  background-color: #c4fcef;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+  font-size: 1.3rem;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(255, 0, 179);
+}
+
+.logo {
+  margin-right: 40rem;
+  font-size: 2rem;
+  background-color: #c4fcef;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 9999;
+  background-color: #c4fcef;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.sidebar:active {
+  transform: scale(1.1);
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .none {
+    display: block;
+  }
+  .logo {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .sidebar {
+    height: 20rem;
+    font-size: 1.3rem;
+    width: 29rem;
+  }
+
+  ul li {
+    margin-left: 7rem;
+  }
+}
+
+span {
+  color: rgb(255, 0, 179);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.main-para {
+  margin-top: 7rem;
+}
+
+.derrick {
+  width: 20rem;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: 7.5rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.derrick:hover {
+  transform: scale(1.1);
+}
+
+.main-content {
+  width: 40rem;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
+  margin-right: 4.4rem;
+  margin-left: -20rem;
+  font-weight: 520;
+  margin-bottom: 10rem;
+}
+
+.main-welcome {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -20rem;
+}
+
+.main-name {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-left: -20rem;
+}
+
+.wave {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+
+.about {
+  margin-top: 9rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .main {
+    display: block;
+    margin-top: -7rem;
+  }
+
+  .main-name {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    margin-top: 0.9rem;
+  }
+
+  .main-content {
+    width: 17rem;
+    margin-top: 15rem;
+    font-size: 0.9rem;
+    margin-right: 4.4rem;
+    margin-left: 3rem;
+    margin-bottom: -5rem;
+    padding-bottom: 2rem;
+    z-index: 1000000;
+  }
+
+  .derrick {
+    width: 17rem;
+    height: 13rem;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    border-radius: 3px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-para {
+    z-index: 2222;
+  }
+
+  .main-welcome {
+    font-size: 1rem;
+    margin-left: 4rem;
+  }
+
+  #scale-up-top-left-1 {
+    margin-bottom: -1rem;
+    padding-top: 2rem;
+  }
+
+  .wave {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    width: 20rem;
+    height: 40rem;
+    font-size: 20rem;
+    opacity: 0;
+  }
+}
+
+/* about me */
+.about-picture {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 50%;
+
+  margin-top: 6rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+
+  /* background-color: aqua; */
+}
+
+.about-me-sentence {
+  width: 30rem;
+  font-size: 1.2rem;
+  font-weight: 520;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-me-head {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.facebook,
+.whatsapp,
+.twitter {
+  margin-left: 2rem;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .about-me {
+    display: block;
+  }
+
+  .about-picture {
+    width: 20rem;
+    height: 15rem;
+    margin-bottom: 3rem;
+    z-index: 100000;
+  }
+
+  .about-me-sentence {
+    width: 20rem;
+    font-size: 0.9rem;
+    font-weight: 520;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-me-head {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    margin-left: 5rem;
+    margin-left: 4rem;
+  }
+}
+
+#derrick {
+  width: 20rem;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: 7.5rem;
+  z-index: 100;
+}
+
+/* body {
+  background-color: aqua;
+} */
+
+/* our services  */
+.our-service {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* .hannah-pic {
+  width: 60rem;
+  height: 25rem;
+  background-size: cover;
+} */
+
+.pic-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 70rem;
+  height: 28rem;
+}
+
+.our-services-card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.our-services-card {
+  flex-basis: 27%;
+  border-radius: 3px;
+  background: #c4fcef;
+  box-shadow: inset 27px 27px 54px #c4fcef, inset -27px -27px 54px #c4fcef;
+  position: relative;
+  top: -4rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.our-services-card:hover {
+  transform: scale(1.1);
+}
+
+.our-services-card-head {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.service {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.icons {
+  margin-left: 8rem;
+  background-color: #0a0313;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.our-services-paragraph {
+  font-size: 1.2rem;
+  font-weight: 520;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .our-services-card-main {
+    display: inline-block;
+    gap: 3rem;
+    margin-bottom: -4rem;
+  }
+
+  .our-services-card-head {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .our-services-paragraph {
+    font-size: 0.9rem;
+    font-weight: 520;
+    gap: 2rem;
+  }
+}
+
+/*               testimonial */
+
+.testimonial {
+  width: 70rem;
+  margin-left: 8rem;
+  font-weight: 520;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-pics {
+  width: 15rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: 5px solid rgb(202, 12, 177);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-pics:hover {
+  transform: scale(1.1);
+  border: none;
+  padding-bottom: 0.6rem;
+}
+
+.testimonial-pics-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.testimonial-pics-flex-self {
+  flex-basis: 20%;
+}
+
+.names {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+  color: rgb(202, 12, 177);
+}
+
+.testimonial-test {
+  font-size: 1.2rem;
+  font-weight: 540;
+  margin-bottom: 5rem;
+}
+
+/* media query */
+@media screen and (max-width: 767px) {
+  .testimonial-pics-flex {
+    display: block;
+    justify-content: space-around;
+    margin-left: 4rem;
+    gap: 3rem;
+  }
+
+  .testimonial {
+    width: 20rem;
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .names {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+
+  .testimonial-test {
+    font-size: 0.9rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+    margin-left: -2rem;
+  }
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  background-color: black;
+  color: white;
+}
+
+.footer-details {
+  flex-basis: 15%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-details p {
+  font-size: 1.2rem;
+}
+
+.footer-details a {
+  color: white;
+  text-transform: capitalize;
+}
+
+.red {
+  color: rgb(202, 12, 177);
+}
+
+.footer-nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-nav p {
+  background-color: white;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.footer-nav a {
+  color: black;
+  text-transform: capitalize;
+  border-right: 7px solid green;
+  padding-right: 1rem;
+}
+
+#ff {
+  border: none;
+}
+
+.copy {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.coppy {
+  background-color: black;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: block;
+    justify-content: space-around;
+    gap: none;
+  }
+
+  .footer-details {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    flex-basis: none;
+  }
+  #footer-details {
+    margin-bottom: -5rem;
+  }
+
+  .footer-nav {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 7rem;
+    margin-bottom: -2rem;
+    margin-top: -3rem;
+  }
+
+  .copy {
+    display: block;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .copy p {
+    font-size: 0.7rem;
+    margin-left: 3rem;
+  }
+
+  .up {
+    padding-top: 1rem;
+  }
+
+  #ff {
+    border-right: 7px solid green;
+  }
+}
+
+/*  animation  */
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+#scale-up-top-left-1 {
+  animation: scale-up-top-left 1s;
+}
+@keyframes scale-up-top-left {
+  0% {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+#scale-up-top-left-2 {
+  animation: scale-up-top-left 2s;
+}
+@keyframes scale-up-top-left {
+  0% {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+#scale-up-top-left-3 {
+  animation: scale-up-top-left 1s;
+}
+@keyframes scale-up-top-left {
+  0% {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+
+.rotate-diagonal-top-right {
+  animation: rotate-diagonal-top-right 2s linear both;
+}
+@keyframes rotate-diagonal-top-right {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+    transform-origin: 100% 0;
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, -180deg);
+    transform-origin: 100% 0;
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, -360deg);
+    transform-origin: 100% 0;
+  }
+}
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
